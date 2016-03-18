@@ -1,10 +1,11 @@
-import com.beust.kobalt.*
-import com.beust.kobalt.plugin.packaging.*
-import com.beust.kobalt.plugin.application.*
-import com.beust.kobalt.plugin.kotlin.*
+import com.beust.kobalt.plugin.application.application
+import com.beust.kobalt.plugin.packaging.assemble
+import com.beust.kobalt.project
+import com.beust.kobalt.repos
 
 val repos = repos()
 
+val gdxVersion = "1.9.2"
 
 val p = project {
 
@@ -23,6 +24,9 @@ val p = project {
 
     dependencies {
 //        compile("com.beust:jcommander:1.48")
+        compile("com.badlogicgames.gdx:gdx:$gdxVersion",
+                "com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion",
+                "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop")
     }
 
     dependenciesTest {
