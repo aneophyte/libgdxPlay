@@ -93,3 +93,4 @@ proguard/
 
 #Kobalt
 kobaltBuild/
+.kobalt
