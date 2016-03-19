@@ -1,4 +1,3 @@
-import com.beust.kobalt.file
 import com.beust.kobalt.plugin.application.application
 import com.beust.kobalt.plugin.packaging.assemble
 import com.beust.kobalt.project
@@ -27,10 +26,7 @@ val p = project {
 //        compile("com.beust:jcommander:1.48")
         compile("com.badlogicgames.gdx:gdx:$gdxVersion",
                 "com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion",
-                "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop",
-                file("lib/gdx-backend-lwjgl-natives.jar"),
-                "org.lwjgl.lwjgl:lwjgl:2.9.3",
-                file("lib/gdx-natives.jar"))
+                "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop")
     }
 
     dependenciesTest {
