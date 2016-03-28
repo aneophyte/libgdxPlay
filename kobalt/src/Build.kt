@@ -23,10 +23,10 @@ val p = project {
     }
 
     dependencies {
-//        compile("com.beust:jcommander:1.48")
-        compile("com.badlogicgames.gdx:gdx:$gdxVersion",
-                "com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion",
-                "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop")
+        compile("com.badlogicgames.gdx:gdx:$gdxVersion"
+                , "com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion"
+                , "com.badlogicgames.gdx:gdx-platform:jar:natives-desktop:$gdxVersion"
+                )
     }
 
     dependenciesTest {
